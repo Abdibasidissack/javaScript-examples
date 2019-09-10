@@ -82,10 +82,23 @@ console.log(e.filter);
                 // calling an atribute within a function
                     function AppFactory()
                     {
-                        var person1 = 
+                        person1 = 
                         {
                             name : 'Sebastian',
                             job : 'Software'
                         }
-                    }
+                        return person1;
+                    // } console.log(AppFactory().person1.name);
+                    }let y = AppFactory();
+                    console.log(y.name);
+
+                // calling a function within the object
+                    person2= {
+                        name : 'yusuf',
+                        job:'thief',
+                        message: ()=>{
+                         console.log('how are you')
+                        }
+                      } 
+                     person2.message();
         
